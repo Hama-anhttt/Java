@@ -39,12 +39,11 @@ public class DiemDiChuyen extends Diem {
         this.vy = vy;
     }
 
-    public void diChuyen()
+    public void diChuyen(float tg)
     {
-        float tg;
-        Scanner s = new Scanner(System.in);
-        System.out.println("Thoi gian di chuyen cua diem la: ");
-        tg = s.nextFloat();
+       float x1 = super.getX() + tg* getVx();
+        float y1 = super.getY() + tg* getVy();
+        System.out.println("Diem moi sau khi di chuyen :"+ x1 +"," +y1);
     }
     @Override
     public String toString()
