@@ -16,7 +16,7 @@ public class KiemTrabai4 {
         
         dc.setVxVy(5,6);
         System.out.println("Diem di chuyen voi van toc (vx, vy) la: "+dc.getVxVy());
-        dc.diChuyen();
+        dc.diChuyen(3);
         System.out.println("Xau chua gia tri cac thuoc tinh: "+dc.toString());
     }
     
